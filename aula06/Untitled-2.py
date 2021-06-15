@@ -20,3 +20,4 @@ a = ("blue final")
 print(len(a))
 for i in a:
     print(i)
+    print(i)
