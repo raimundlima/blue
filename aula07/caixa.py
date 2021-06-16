@@ -24,10 +24,13 @@ valor_n3 = 10
 valor_n4 = 50
 valor_n5 = 100
 
+Valor_Minimo = 10 
+Valor_Maximo = 600
+
 quantidade_sacar = float(input('Qual a quantidade que voce quer sacar?'))
 
-while quantidade_sacar < 10 or quantidade_sacar > 600:
-    print('O valor informado não é permitida. Favor informar um valor entre R$ 10 e  R$600 \n')
+while quantidade_sacar < Valor_Minimo or quantidade_sacar > Valor_Maximo:
+    print(f'O valor informado não é permitida. Favor informar um valor entre {Valor_Minimo} e  {Valor_Maximo} R$ \n')
     
 quantidade_auxiliar = quantidade_sacar
 
