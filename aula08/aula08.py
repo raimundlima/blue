@@ -16,7 +16,54 @@
 # print(l2)
 
 #lista vazia:
-lvazia = []
-for i in range(5):
-    lvazia.append(input('Digite um valor: \n'))
-print(lvazia)
+# lvazia = []
+# for i in range(5):
+#     lvazia.append(input('Digite um valor: \n'))
+#     if i not in lvazia:
+#         lvazia.append(i)
+#     elif i in lvazia:
+#         print('Duplicate')
+    
+# print(lvazia)
+
+# numeros = list()
+# while True:
+#     pergunta=int(input('Digite um Valor: '))
+#     if pergunta not in numeros:
+#         numeros.append(pergunta)
+#         print('Numero Adcionado!')    
+    
+#     else:
+#         print('Valor Duplicado, Digite outro')
+
+
+#     resposta= input('Deseja imprimir os numeros ou quer continuar? [I/C]: ')
+#     for i in resposta:
+#         if i not in 'IiCc':
+#             resposta= input('Deseja imprimir os numeros ou quer continuar? [I/C]: ')
+#     if resposta in 'Ii':
+#          break
+# print(numeros)
+
+
+lista = list()
+par = list()
+impar = list()
+while True:
+    lista.append(int(input('Digite um número: (0 para sair) ')))
+    if lista == 0:
+        lista.pop()
+        break
+
+    if lista % 2 == 0:
+        par.append(lista)
+    else:
+
+        impar.append(lista)
+
+#print(f'''Lista: {lista}
+#Par: {par}
+#Impar: {impar}''')
+print(f'par{par}')
+
+
