@@ -6,11 +6,13 @@ candidatos = {
     '04': 'Voto Nulo',
     '05': 'Voto Branco'
 }
-print (can)
-nas = int(input('Por favor insira sua data de nascimento \n'))
-#print (f'escolha seu canditado {candidatos}')
+nas = []
+
+
+print (f'escolha seu canditado {candidatos}')
 votos = {} # dicionário com total de votos começa vazio
 while True:
+    
     voto = input('Digite o número do candidato (ou "fim" para encerrar): ')
     if voto == 'fim':
         break # sai do while True
@@ -29,7 +31,7 @@ def check_age (idade):
     
     idade = atual - nas
     if idade > 18:
-            voto = input(f'seu voto é obrigatório por favor escolha seu canditado {candidatos}')
+            print('seu voto é obrigatório por favor escolha seu canditado ')
     elif idade >= 16 and idade <= 17:
             print ('seu voto é opcional')
     else:
