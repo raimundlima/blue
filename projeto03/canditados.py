@@ -1,4 +1,4 @@
-from datetime import date
+
 candidatos = {
     '01': 'Capitão Presença',
     '02': 'Super Aba ',
@@ -6,7 +6,6 @@ candidatos = {
     '04': 'Voto Nulo',
     '05': 'Voto Branco'
 }
-nas = []
 
 
 print (f'escolha seu canditado {candidatos}')
@@ -26,16 +25,23 @@ for numero, qtd_votos in votos.items():
     print(f'{candidatos[numero]} teve {qtd_votos} votos')
 
 
-atual = date.today().year
-def check_age (idade):
-    
-    idade = atual - nas
-    if idade > 18:
-            print('seu voto é obrigatório por favor escolha seu canditado ')
-    elif idade >= 16 and idade <= 17:
-            print ('seu voto é opcional')
-    else:
-            print ('voce não pode votar ')
+# candidatos = {
+#     '1': 'Capitão Presença',
+#     '2': 'Super Aba ',
+#     '3': 'Malhado',
+#     '4': 'Voto Nulo',
+#     '5': 'Voto Branco'
+# }
+# votos = {} # dicionário com total de votos começa vazio
+# def autoriza_voto(voto):
+#     if voto in candidatos: # se é um dos números de candidato válido
+#         votos[voto] = votos.get(voto, 0) + 1
+#     else:
+#         print(f'Número inválido: {voto}')
+# print(f'escolha seu canditado {candidatos}')
+# voto = input('Digite o número do candidato: ')
+# autoriza_voto(voto)
+# #print('Resultado:')
+# #for numero, qtd_votos in votos.items():
+# #     print(f'{candidatos[numero]} teve {qtd_votos} votos')
 
-
-check_age(atual-nas)
