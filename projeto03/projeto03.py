@@ -1,5 +1,5 @@
 dados = []
-numero_pessoas = 0
+numero_pessoas =0
 continuacao = True
 feminino = 'F'
 masculino = 'M'
@@ -12,16 +12,16 @@ while continuacao == True:
     
     nome = input('Vamos guardar alguns dados.Digite o nome de uma pessoa para cadastrá-la.\n')
     idade = int(input('Digite a idade dessa pessoa: \n'))
-    #gen = input('Agora digite o gênero de nascença dessa pessoa. Use "F" ou "M"\n').upper()
+    gen = input('Agora digite o gênero de nascença dessa pessoa. Use "F" ou "M"\n').upper()
     
-    #while gen != masculino and gen != feminino:
-            #gen = input('Não conseguimos computar um gênero válido. Tente novamente.').upper()
+    while gen != masculino and gen != feminino:
+        gen = input('Não conseguimos computar um gênero válido. Tente novamente.').upper()
     
-    # idadesLista.append(idade)
-    # dicionario = {'Nome': nome, 'Idade': idade, 'Gênero': gen}
+        idadesLista.append(idade)
+        dicionario = {'Nome': nome, 'Idade': idade, 'Gênero': gen}
 
-   # if gen == feminino:
-       # mulheres.append(dicionario) 
+    if gen == feminino:
+        mulheres.append(dicionario) 
 
     numero_pessoas += 1
     dados.append(dicionario)

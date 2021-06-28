@@ -1,17 +1,14 @@
+<<<<<<< HEAD
 # tirar tudo de dentro da função e criar uma função recebe voto e idade ve se 
 # a idade é valida para inputar o voto será que isso da certo? 
 
+=======
+from typing import Annotated
+from projeto03.maisum import autoriza_voto
+>>>>>>> 3fde3bb5b14c3080e7b9e25127e8d2ff6aeee01f
 
-from datetime import date
-atual = date.today().year
-candidatos = {
-    '1': 'Capitão Presença',
-    '2': 'Super Aba ',
-    '3': 'Malhado',
-    '4': 'Voto Nulo',
-    '5': 'Voto Branco'
-}
 
+<<<<<<< HEAD
 
 while True:
     votos = {} # dicionário com total de votos começa vazio
@@ -58,3 +55,9 @@ while True:
     # for numero, qtd_votos in votos.items():
     #     print(f'{candidatos[numero]} teve {qtd_votos} votos')
     # #print('Resultado:')
+=======
+def autoriza_voto (voto):
+    from datetime import date
+    atual = date.today().year
+    idade = atual - A
+>>>>>>> 3fde3bb5b14c3080e7b9e25127e8d2ff6aeee01f
