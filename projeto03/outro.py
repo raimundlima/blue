@@ -1,3 +1,6 @@
+# tirar tudo de dentro da função e criar uma função recebe voto e idade ve se 
+# a idade é valida para inputar o voto será que isso da certo? 
+
 
 from datetime import date
 atual = date.today().year
@@ -9,7 +12,7 @@ candidatos = {
     '5': 'Voto Branco'
 }
 
-check = [0]
+
 while True:
     votos = {} # dicionário com total de votos começa vazio
 
@@ -24,23 +27,23 @@ while True:
         
         idade = atual - nas
         if idade > 18:
-            return (autoriza_voto)
+            return autoriza_voto
         if idade >= 16 and idade <= 17:
             resposta = str(input('seu voto é opcional voce deseja votar? S/N \n')).upper()
             if resposta == "S":
-                return (autoriza_voto)
+                return autoriza_voto
             elif resposta == "N": 
-                return (check_age)
+                return check_age 
 
-        elif idade <=15 :
+        else:
             print('infelizmente voce não pode votar')
+            
     
 
 
 
     nas = int(input(f'Por favor inserir a data de nascimento do usuário  \n'))
-    # if check == 0:
-    #     break
+    
     check_age(atual-nas)
     print(f'escolha seu canditado {candidatos}')
     voto = input('Digite o número do candidato: ')

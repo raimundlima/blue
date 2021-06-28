@@ -7,16 +7,19 @@
 #     print(soma)
     
 
-def somar(numero1,numero2):  #bloco de comandos da função
+# def somar(numero1,numero2):  #bloco de comandos da função
     
-    somar = numero1 * numero2
-    print(f'a area total do seu terreno é de : {somar}')
+#     somar = numero1 * numero2
+#     print(f'a area total do seu terreno é de : {somar}')
 
-area = print ('Por favor informe a area do seu terreno')
+# area = print ('Por favor informe a area do seu terreno')
 
-largura = float(input('digite a largura : '))
-comprimento = float(input('digite o comprimento: '))
-somar(largura,comprimento) 
+# largura = float(input('digite a largura : '))
+# comprimento = float(input('digite o comprimento: '))
+# somar(largura,comprimento) 
+
+
+
 
 
 
