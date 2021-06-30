@@ -1,50 +1,46 @@
-<<<<<<< HEAD
 # tirar tudo de dentro da função e criar uma função recebe voto e idade ve se 
 # a idade é valida para inputar o voto será que isso da certo? 
 
-=======
-from typing import Annotated
-from projeto03.maisum import autoriza_voto
->>>>>>> 3fde3bb5b14c3080e7b9e25127e8d2ff6aeee01f
+# from typing import Annotated
+# from projeto03.maisum import autoriza_voto
 
 
-<<<<<<< HEAD
 
-while True:
-    votos = {} # dicionário com total de votos começa vazio
+# while True:
+#     votos = {} # dicionário com total de votos começa vazio
 
-    def autoriza_voto(voto):
+#     def autoriza_voto():
         
-        if voto in candidatos: # se é um dos números de candidato válido
-            votos[voto] = votos.get(voto, 0) + 1
-        else:
-            print(f'Número inválido: {voto}')
+#         if voto in candidatos: # se é um dos números de candidato válido
+#             votos[voto] = votos.get(voto, 0) + 1
+#         else:
+#             print(f'Número inválido: {voto}')
 
-    def check_age (idade):
-        
+def check_age ():
+        from datetime import date
+        atual = date.today().year
         idade = atual - nas
         if idade > 18:
-            return autoriza_voto
+            print('voce pode votar')
         if idade >= 16 and idade <= 17:
             resposta = str(input('seu voto é opcional voce deseja votar? S/N \n')).upper()
             if resposta == "S":
-                return autoriza_voto
+                return 'voce pode votar'
             elif resposta == "N": 
-                return check_age 
+                return 'vaza'
 
-        else:
-            print('infelizmente voce não pode votar')
+        #else:
+            #print('infelizmente voce não pode votar')
             
+        
+
+
+nas = int(input(f'Por favor inserir a data de nascimento do usuário  \n'))
     
 
-
-
-    nas = int(input(f'Por favor inserir a data de nascimento do usuário  \n'))
-    
-    check_age(atual-nas)
-    print(f'escolha seu canditado {candidatos}')
-    voto = input('Digite o número do candidato: ')
-    autoriza_voto(voto)
+    # print(f'escolha seu canditado {candidatos}')
+    # voto = input('Digite o número do candidato: ')
+    # autoriza_voto(voto)
 
 
 
@@ -55,9 +51,3 @@ while True:
     # for numero, qtd_votos in votos.items():
     #     print(f'{candidatos[numero]} teve {qtd_votos} votos')
     # #print('Resultado:')
-=======
-def autoriza_voto (voto):
-    from datetime import date
-    atual = date.today().year
-    idade = atual - A
->>>>>>> 3fde3bb5b14c3080e7b9e25127e8d2ff6aeee01f
