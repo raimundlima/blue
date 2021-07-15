@@ -5,11 +5,16 @@ padding: 0;
 font-family: 'Noto Sans JP', sans-serif;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 
 nav {
-    background-color: #615037;
-    /* margin-left: 1rem; */
+    background-color: #9406f3;
+    font-weight: 500;
     padding-left: 1rem;
+    position: fixed;
+    width: 100%;
 }
 nav ul {
     list-style: none;
@@ -126,4 +131,56 @@ section#projetos div button:hover {
     color: #fff;
     transform:scale(1.2);
 
+}
+
+section#habilidades h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+
+}
+
+section#habilidades {
+    padding: 3rem 10rem 3rem 10rem;
+    background-color: #d7e7ff;
+}
+
+section#habilidades p{
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+}
+
+section#habilidades div{
+    display: flex;
+    border: 1px solid rgb(126, 131, 141) ;
+    border-radius: 1rem;
+}
+
+section#habilidades div span#html {
+    background-color: rgb(162, 0, 255);
+    color: #fff;
+    text-align: end;
+    padding: .3rem;
+    border-radius: 1rem;
+    width: 80%;
+}
+
+section#habilidades div span#css {
+    background-color: rgb(162, 0, 255);
+    color: #fff;
+    text-align: end;
+    padding: .3rem;
+    border-radius: 1rem;
+    width: 60%;
+}
+
+section#habilidades div span#js {
+    background-color: rgb(162, 0, 255);
+    color: #fff;
+    text-align: end;
+    padding: .3rem;
+    border-radius: 1rem;
+    width: 40%;
 }
