@@ -24,3 +24,106 @@ nav ul li a {
     text-decoration: none;
     color: white;
 }
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+header div#img-rocket{
+    display: flex;
+    justify-content: center;
+
+}
+header div p {
+    font-size: 2vw;
+    font-weight: 700;
+
+}   
+
+header div span {
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+header div img {
+
+    width: 60%;
+
+}
+
+section#about {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 4rem;
+background-color: bisque;
+}
+
+section#about div img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+section#about div p {
+    font-size: 1.1vw;
+    text-align: justify;
+    color: blueviolet;
+    line-height: 2.5rem;
+
+}
+
+section#projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+section#projetos div img {
+    margin: auto;
+    display: block;
+    width: 40%;
+}
+
+section#projetos div h2{
+    text-align: center;
+    padding: 1rem;
+}
+
+section#projetos div p {
+    text-align: justify;
+}
+
+section#projetos div {
+    padding: 2rem;
+}
+
+section#projetos div button {
+    border: 1px solid steelblue;
+    background-color: #fff;
+    color:violet;
+    padding: 1rem;
+    font-size: 0.8vw;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .6s ease-out;
+
+}
+
+section#projetos div button:hover {
+    background-color: thistle;
+    color: #fff;
+    transform:scale(1.2);
+
+}
