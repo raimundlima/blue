@@ -9,6 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 nav {
     background-color: #9406f3;
     font-weight: 500;
@@ -31,20 +32,86 @@ nav ul li a {
     color: white;
 }
 
-header {
+header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5rem;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-    background-color: aquamarine;
-    width: 50%;
-
+header div#img-rocket {
+   display: block;
+   justify-content: center;
+   align-items: center;
 }
 
 
-   
 
+/* Slideshow container */
+.slideshow-container {
+    
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    
+    overflow: hidden;
+    /* position: relative; */
+    
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .mySlides {
+      height: 100%;
+      
+      
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      
+  }
+
+  
+  
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
 
 section#about {
 display: flex;
