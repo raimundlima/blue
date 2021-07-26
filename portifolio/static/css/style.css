@@ -37,37 +37,29 @@ header{
    justify-content: center;
    align-items: center;
    padding: 5rem;
+   
 }
 
 header div#img-rocket {
-   display: block;
-   justify-content: center;
-   align-items: center;
-}
-
-
-
-/* Slideshow container */
-.slideshow-container {
-    
-    height: 40vh;
     display: flex;
-    flex-direction: column;
-    
-    overflow: hidden;
-    /* position: relative; */
+    justify-content: center;
+ }
+
+
+/* Slideshow  */
+.slideshow-container {
+    max-width: 1000px;
+     position: relative;
+     margin: auto;
     
     transform: translateX(0);
     transition: transform 0.3s ease-out;
   }
   
   .mySlides {
-      height: 100%;
       
-      
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
+      display: none;
+     
       
   }
 
@@ -75,11 +67,11 @@ header div#img-rocket {
   
   
   
-  /* The dots/bullets/indicators */
+  /* bolinhas */
   .dot {
     height: 15px;
     width: 15px;
-    
+    visibility: visible;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -90,7 +82,7 @@ header div#img-rocket {
     background-color: #717171;
   }
   
-  /* Fading animation */
+  /* animação */
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -108,22 +100,22 @@ header div#img-rocket {
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
+ 
 
 section#about {
 display: flex;
 justify-content: center;
 align-items: center;
+padding: 4rem;
 background-color: bisque;
 }
 
 section#about div img {
     width: 70%;
     border-radius: 50%;
-}
+    display: block;
+    margin: auto;
+ }
 
 section#about div p {
     font-size: 1.1vw;
@@ -144,7 +136,7 @@ section#projetos {
 section#projetos div img {
     margin: auto;
     display: block;
-    width: 40%;
+    width: 80%;
 }
 
 section#projetos div h2{
@@ -183,6 +175,11 @@ section#projetos div button:hover {
 
 }
 
+section#habilidades {
+    padding: 3rem 10rem 3rem 10rem;
+    background-color: #d7e7ff;
+}
+
 section#habilidades h2{
     text-align: center;
     font-size: 2.5rem;
@@ -190,10 +187,7 @@ section#habilidades h2{
 
 }
 
-section#habilidades {
-    padding: 3rem 10rem 3rem 10rem;
-    background-color: #d7e7ff;
-}
+
 
 section#habilidades p{
     padding: 1rem;
@@ -211,7 +205,7 @@ section#habilidades div{
 section#habilidades div span#html {
     background-color: rgb(162, 0, 255);
     color: #fff;
-    text-align: end;
+    text-align: center;
     padding: .3rem;
     border-radius: 1rem;
     width: 80%;
