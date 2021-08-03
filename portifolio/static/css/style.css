@@ -129,51 +129,73 @@ section#projetos {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
-
-}
-
-section#projetos div img {
-    margin: auto;
-    display: block;
-    width: 80%;
-}
-
-section#projetos div h2{
+    flex-wrap: wrap;
+    padding: 4rem;
+    position: relative;
+  }
+  
+  section#projetos div#card {
+    padding: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 20rem;
+    border-radius: 1rem;
+  }
+  
+  section#projetos div#card p {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  section#projetos div#card h2 {
     text-align: center;
     padding: 1rem;
-}
-
-section#projetos div p {
-    text-align: justify;
-}
-
-section#projetos div {
-    padding: 2rem;
-}
-
-section#projetos div button {
-    border: 1px solid steelblue;
-    background-color: #fff;
-    color:violet;
-    padding: 1rem;
-    font-size: 0.8vw;
-    font-weight: 600;
-    border-radius: 0.5rem;
+  }
+  
+  section#projetos div#card img {
     display: block;
     margin: auto;
-    margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+  }
+  
+  section#projetos div#card a {
+    border: 1px solid #0066ff;
+    background-color: #fff;
+    color: #0066ff;
+    font-size: 0.8vw;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
     cursor: pointer;
-    transition: .6s ease-out;
-
-}
-
-section#projetos div button:hover {
-    background-color: thistle;
+    transition: 0.6s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  section#projetos div#card a:hover {
+    background-color: #0066ff;
     color: #fff;
-    transform:scale(1.2);
-
-}
+  }
+  
+  section#projetos a#config{
+    padding: 1rem;
+    text-align: end;
+    text-decoration: none;
+    color: #0066ff;
+    font-size: 2rem;
+    transition: all .2s ease-out;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+  }
+  
+  section#projetos a#config:hover{
+    color: #71aaff;
+  }
 
 section#habilidades {
     padding: 3rem 10rem 3rem 10rem;
