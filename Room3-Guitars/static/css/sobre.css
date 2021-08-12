@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.menuFixo {
+    position: fixed;
+    top: 0px;
+    background-color: rgba(89, 89, 90, 0.562);
+}
+
+div#menu {
+    border: 1px solid transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.336);
+    position: fixed;
+    width: 100%;
+}
+
+nav img#logotipo {
+    width: 15%;
+    padding: .5rem 0rem .5rem 2rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding-left: 40rem;
+}
+
+nav ul li{
+    padding: .8rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 600;
+} 
+
+header{
+    padding: 18vw;
+    background-image: url(../img/bg-masthead.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header h1{
+    font-size: 2.4vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color:rgba(0, 0, 0, 0.400);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem .8rem 1rem .8rem;
+}
+
+header div#sobre{
+    display: flex;
+}
+
+header div#sobre p#text1{
+    width: 50%;
+    font-size: 1.6vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+    background-color:rgba(0, 0, 0, 0.400);
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    padding: 1vw;
+    text-align: center;
+}
+
+header div#sobre p#text2{
+    width: 50%;
+    font-size: 1.6vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+    background-color:rgba(0, 0, 0, 0.400);
+    justify-content: center;
+    color: white;
+    padding: 1vw;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: .3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    height: 40px;
+    color: #fff;
+    font-size: 19px;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}

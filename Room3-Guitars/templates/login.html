@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <title>Room3 Guitars - Admin</title>
+</head>
+<body>
+    <div id="login">
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class=flashes>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+        <form class="card" action='/auth' method="POST">
+            
+            <a href="/adm">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+
+            <div class="card-header">
+
+                <img src="./logo.png" alt="" width="100%">
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-content-area">
+
+                    <label for="password">Senha</label>
+
+                    <input type="password" id="senha" name="senha" autocomplete="off">
+
+                </div>
+
+            </div>
+
+            <div class="card-footer">
+
+                <input type="submit" value="login" class="submit" onclick="Login()">
+
+                <a href="./index.html" class="recuperar_senha">Voltar ao portal</a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

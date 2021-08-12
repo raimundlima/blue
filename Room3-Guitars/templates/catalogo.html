@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../static/css/style.catalogo.css" rel="stylesheet" />
+</head>
+<body>
+  
+<section id="catalogo">   
+<div class="container">
+    <ul class="gallery">
+      {% for guitar in guitar %}
+     <li>
+      
+        <div class="flip">
+          <div class="front-side">
+            <img class="imagens" src="{{guitar.imagem}}">
+          </div>
+          <div class="back-side">
+            <a href="#">
+              <div class="content">
+                <div class="loader"></div>
+                <div class="text">
+                  <h3>{{guitar.nome}}</h3>
+                  <p>{{guitar.descricao}}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+      </li>
+    
+    </ul>
+</div>
+</section> 
+<footer class='d-flex justify-content-center'>
+  <p>Todos os direitos reservados: Room3 - T3C5 - Blue EdTech 
+      </a>
+      &copy;
+  </p>
+</footer>
+</body>
+</html>
